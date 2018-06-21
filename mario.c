@@ -17,7 +17,7 @@ int main(void) {
     for (int i=0; i<height; i++){
         // print spaces for left pyramid
         for (int j=height-1; j>i; j--) {
-            printf("-");
+            printf(" ");
         }
 
         //print hashes for left pyramid
@@ -27,7 +27,7 @@ int main(void) {
 
         //print gap
         for(int l=0; l<2; l++) {
-            printf("$");
+            printf(" ");
         }
 
         // print hashes for right pyramid
