@@ -30,11 +30,12 @@ int main(void) {
             printf("$");
         }
 
-
         // print hashes for right pyramid
-        printf("\n");
+        for(int k=0; k<i+1; k++){
+            printf("#");
+        }
 
         //print new line
-
+        printf("\n");
     }
 }
