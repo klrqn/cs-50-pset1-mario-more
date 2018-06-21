@@ -9,7 +9,7 @@ int main(void)
 {
     // get user input
     height = get_int("Height: ");
-    while (height < 0 && height > 23)
+    while (height < 0 || height > 23)
     {
         height = get_int("Height: ");
     }
