@@ -5,33 +5,39 @@
 
 int height;
 
-int main(void) {
-
+int main(void)
+{
     // get user input
     height = get_int("Height: ");
-    while (height < 0 && height > 23) {
+    while (height < 0 && height > 23)
+    {
         height = get_int("Height: ");
-        }
+    }
 
     // make left pyramid
-    for (int i=0; i<height; i++){
+    for (int i = 0; i < height; i++)
+    {
         // print spaces for left pyramid
-        for (int j=height-1; j>i; j--) {
+        for (int j = height - 1; j > i; j--)
+        {
             printf(" ");
         }
 
         //print hashes for left pyramid
-        for(int k=0; k<i+1; k++){
+        for (int k = 0; k < i + 1; k++)
+        {
             printf("#");
         }
 
         //print gap
-        for(int l=0; l<2; l++) {
+        for (int l = 0; l < 2; l++)
+        {
             printf(" ");
         }
 
         // print hashes for right pyramid
-        for(int k=0; k<i+1; k++){
+        for (int k = 0; k < i + 1; k++)
+        {
             printf("#");
         }
 
